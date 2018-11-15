@@ -1,0 +1,28 @@
+<h3>Enter Employee Details</h3>
+
+<form>
+  <div>
+    <label>Employee Id:</label>
+    <input  type="number" name="ino" [(ngModel)]="employees.id" readonly="{{isEdit?'readonly':''}}"/>
+    
+        <label >Employee Name:</label>
+        <input type="text"  name="inm" autocomplete="off" [(ngModel)]="employees.name"/>
+        
+     
+        <label >Basic :</label>
+       <input type="number"   name="bas" [(ngModel)]="employees.basic"/>
+    
+     
+           <label>HRA :</label>
+         <input type="number"   name="hra" [(ngModel)]="employees.hra"/><br>
+
+       
+          <label >Department :</label>
+          <input type="text" autocomplete="off"   name="dept" [(ngModel)]="employees.dept"/>
+     
+           
+           <button type="button" (click)="save()">
+              {{employees.isEdit?"Update":"Add"}}</button> 
+           <button type="button" (click)="cancel()">Cancel</button>
+       </div>  
+ </form>

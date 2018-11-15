@@ -1,0 +1,43 @@
+<table [ngClass]="stClass">
+  <tr>
+    <td>
+    mycomp works!
+    </td>
+  </tr>
+</table>
+
+
+<table [ngClass]="stClassArray">
+    <tr>
+      <td>
+      mycomp works againnnn!
+      </td>
+    </tr>
+  </table>
+
+  <!--p>this is the letter spacing</p-->
+
+
+
+<br>
+Enter your style class here : <input type="text" [(ngModel)]="stClass" />
+
+<br>
+
+<input [(ngModel)]="color" />
+<button (click)="size = size+1">+</button>
+<button (click)="size = size-1">-</button>
+
+
+<div [ngStyle]="{'color':color,'font-size':size +'px'}">
+  This is using ngStyle
+</div>
+
+<br>
+<p [ngStyle]="{'visibility':show}">
+  to toggle the visiblity
+</p>
+
+<button (click)="toggle()">Toggle</button>
+
+<p>this para comes after the toggle</p>

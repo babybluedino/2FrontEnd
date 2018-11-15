@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(243, 208, 131)
+}
+
+a{
+    font-size: 20 px;
+    border: solid 1px black;
+    background-color: black;
+    color:goldenrod;
+    padding:5px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}

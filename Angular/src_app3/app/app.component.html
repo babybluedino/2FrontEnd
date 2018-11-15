@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+this is parent component
+
+
+<app-counter [initval]="count"></app-counter>
+<br>
+<!--
+<div *ngFor="let val of counta">
+<app-counter [initval]="val"></app-counter>
+</div>
+-->
+
+
+<br><br>
+{{currVal}}<br>
+
+<app-counter [initval]="currVal" (change)="changeVal($event)"></app-counter>
+
+end of parent
